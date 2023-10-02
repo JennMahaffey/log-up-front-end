@@ -6,18 +6,7 @@ const {
   passwordMatches,
 } = require("../log-up-back-end/main.js");
 
-let user = getInput(1)
-let password = getInput(2)
 
-if(isRegisteredUser(user)) {
-  if(passwordMatches={(user, password)){
-    console.log('you are logged in')
-  }else{
-    console.log('oncorrect password')
-  }else{
-    console.log('not registered')
-  }
-}
 // The code immediately above grabs the functions you'll
 // need for this front-end code. Remember that you
 // already have the back-end logic.
@@ -72,3 +61,48 @@ if(isRegisteredUser(user)) {
 
 // Being sure to do all that's outlined above, write
 // your code below!
+
+let user = getInput(1)
+let password = getInput(2)
+
+if(isRegisteredUser(user)) {
+  if(passwordMatches={(user, password)){
+    console.log('you are logged in')
+  }else{
+    console.log('oncorrect password')
+  }else{
+    console.log('not registered')
+  }
+}
+function isValidEmail(email){
+  if((email.indexOf('.prsvr@gmail.com') === (email.length - 16) && 
+  email.indexOf('.prsvr@gmail.com') !== 0) || 
+  (email.indexOf('@perseverenow.org') === (email.length - 17) 
+  && (email.indexOf('@perseverenow.org') !== 0))){
+    return true
+  } else {return false}
+}
+
+function isValidPassword(password){
+  if(password.length >= 8 && 
+    password !== password.toUpperCase() && 
+    password !== password.toLowerCase()){
+    return true
+  } else {return false}
+}
+
+function isRegisteredUser(user){
+  if(user === user1 || 
+    user === user2 || 
+    user === user3){
+    return true
+  } else {return false}
+}
+
+function passwordMatches(str1, str2){
+  if((str1 === user1 && str2 === password1) || 
+    (str1 === user2 && str2 === password2) || 
+    (str1 === user3 && str2 === password3)){
+    return true
+  } else {return false}
+}
