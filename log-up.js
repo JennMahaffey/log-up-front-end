@@ -6,6 +6,18 @@ const {
   passwordMatches,
 } = require("../log-up-back-end/main.js");
 
+let user = getInput(1)
+let password = getInput(2)
+
+if(isRegisteredUser(user)) {
+  if(passwordMatches={(user, password)){
+    console.log('you are logged in')
+  }else{
+    console.log('oncorrect password')
+  }else{
+    console.log('not registered')
+  }
+}
 // The code immediately above grabs the functions you'll
 // need for this front-end code. Remember that you
 // already have the back-end logic.
